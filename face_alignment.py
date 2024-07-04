@@ -44,7 +44,6 @@ def face_alignment(face_file_path, crop_size=CFG.crop_size):
 
 
 def process_face_alignment(img_folder_src, img_folder_dst, crop_size=CFG.crop_size):
-    img_folder_dst = img_folder_dst + "dsa"
     assert os.path.exists(img_folder_src), f"Path not fouund: {img_folder_src=}"
     assert not os.path.exists(img_folder_dst), f"Folder alredy exist: {img_folder_src=}"
     if not os.path.exists(img_folder_dst):
