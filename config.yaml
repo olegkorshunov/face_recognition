@@ -1,0 +1,11 @@
+predictor_path: ./models/shape_predictor_68_face_landmarks.dat
+# original not preprocessing images
+img_folder_src: ./CelebA/img_celeba
+# folder for face alignment images
+img_folder_dst:  ./CelebA/img_celeba_alignment_384
+# Ask the detector to find the bounding boxes of each face. The 1 in the
+# second argument indicates that we should upsample the image 1 time. This
+# will make everything bigger and allow us to detect more faces.
+upsample: 1
+# efficientnet_v2_s input shape = 384
+crop_size: 384
