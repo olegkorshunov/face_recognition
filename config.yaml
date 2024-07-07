@@ -10,3 +10,4 @@ img_folder_dst:  ./CelebA/img_celeba_alignment_384
 upsample: 1
 # efficientnet_v2_s input shape = 384
 crop_size: 384
+label_trashold: 28

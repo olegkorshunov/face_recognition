@@ -14,5 +14,7 @@ class _CFG:
     upsample: int
     crop_size: int
 
+    label_trashold:int 
+
 
 CFG = _CFG(**yaml.load(open(FILE_PATH, "r", encoding="utf-8"), Loader=yaml.FullLoader))
