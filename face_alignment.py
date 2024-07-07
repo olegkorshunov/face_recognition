@@ -23,6 +23,7 @@ def face_alignment(face_file_path, crop_size=CFG.crop_size):
     # Ask the detector to find the bounding boxes of each face. The 1 in the
     # second argument indicates that we should upsample the image 1 time. This
     # will make everything bigger and allow us to detect more faces.
+    # TODO: крче можно, если с upsample=1 не нашли рожу, то сделать upsample=2 и попытася найти ещё
     dets = DETECTOR(img, CFG.upsample)
 
     num_faces = len(dets)
@@ -62,5 +63,5 @@ def process_face_alignment(img_folder_src, img_folder_dst, crop_size=CFG.crop_si
 
 
 if __name__ == "__main__":
-    # TODO: add multiprocess
+    # TODO: add multiprocess пизда крутит долго распаралелить!!!!
     process_face_alignment(CFG.img_folder_src, CFG.img_folder_dst)
