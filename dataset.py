@@ -6,6 +6,8 @@ import pandas as pd
 
 from config import CFG
 
+# TODO: ADD SEED !
+
 
 def get_data_train_and_data_irm(
     data_train_size: int = 60000,
@@ -25,7 +27,7 @@ def get_data_train_and_data_irm(
     data["is_query"] = None
     data["is_gallery"] = None
     data = data.join(df_identity.set_index(img_col_name), on=img_col_name, how="left")
-    data[img_col_name] = data[img_col_name].map(Path)
+    data[img_col_name] = data[img_col_name].map(lambda x: Path(x))
     data_label_count = (
         data.groupby(["label"])
         .agg({"label": "count"})
