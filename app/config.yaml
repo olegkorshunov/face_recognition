@@ -1,0 +1,3 @@
+predictor_path: ./models/shape_predictor_68_face_landmarks.dat
+checkpoint_path: ./models/efficientnet_v2_s_tl_20_epoch.pth
+emb_dim: 1280
