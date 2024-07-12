@@ -11,4 +11,7 @@ Project structure:
  - [jupyter/train_baseline.ipynb](jupyter/train_baseline.ipynb) - baseline face recognition solution, no tricks(no scheduler, no augmentation, not all dataset, only 10 epoch) - test accuracy 78%
  -  [jupyter/train_triplet_margin_loss.ipynb](jupyter/train_triplet_margin_loss.ipynb) - implemented metric for triplet loss function, but after a little research was found cool repo [open-metric-learning](https://github.com/OML-Team/open-metric-learning), and I decided to use it for further training.
  - ./model - you can take checkpoints from [here](https://drive.google.com/drive/folders/1U6ghyTxqUuF3XHrJM5EZJ2SO)
- - /app - [here](https://drive.google.com/file/d/1wIspqpD5LsE3LPgQtcn-WXL_6vEtA5Cx/view?usp=drive_link) is simple demo of facial recognition system 
+ - /app - [here](https://drive.google.com/file/d/1wIspqpD5LsE3LPgQtcn-WXL_6vEtA5Cx/view?usp=drive_link) is simple demo of facial recognition system
+   - If you want run app locally, you can just change workdir to `cd ./app` and use docker
+     - docker compose build  
+     - docker compose up
