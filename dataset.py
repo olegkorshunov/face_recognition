@@ -121,7 +121,7 @@ def split_by_person(
     return query_df, distractors_df
 
 
-def split_dataset_by_photo(df, label_col, num_val_samples_per_class):
+def split_dataset_by_photo(df, num_val_samples_per_class, label_col: str = "label"):
     validation_data = []
     train_data = []
     test_data = []
