@@ -18,7 +18,7 @@ Project structure:
 
 - [jupyter/train_triplet_loss.ipynb](jupyter/train_triplet_loss.ipynb) -  trained trplet loss, was use [open-metric-learning](https://github.com/OML-Team/open-metric-learning)
 
- - /app - [here](https://drive.google.com/file/d/1wIspqpD5LsE3LPgQtcn-WXL_6vEtA5Cx/view?usp=drive_link) is simple demo of face recognition system
+ - [app/](app/) - [here](https://drive.google.com/file/d/1wIspqpD5LsE3LPgQtcn-WXL_6vEtA5Cx/view?usp=drive_link) is simple demo of face recognition system
    - If you want run app locally, you can just change workdir to `cd ./app` and use docker
      - docker compose build  
      - docker compose up
