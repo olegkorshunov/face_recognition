@@ -16,7 +16,7 @@ Project structure:
   -  [jupyter/train_triplet_margin_loss.ipynb](jupyter/train_triplet_margin_loss.ipynb) - checked IR metric on triplet loss function   
 - [jupyter/train_arcface.ipynb](jupyter/train_arcface.ipynb) -  trained arcface, was use [pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
 
-- [jupyter/train_triplet_loss.ipynb](jupyter/train_triplet_loss.ipynb) -  trained trplet loss, was use [open-metric-learning](https://github.com/OML-Team/open-metric-learning)
+- [jupyter/train_triplet_loss.ipynb](jupyter/train_triplet_loss.ipynb) -  trained triplet loss, was use [open-metric-learning](https://github.com/OML-Team/open-metric-learning)
 
  - [app/](app/) - [here](https://drive.google.com/file/d/1wIspqpD5LsE3LPgQtcn-WXL_6vEtA5Cx/view?usp=drive_link) is simple demo of face recognition system
    - If you want run app locally, you can just change workdir to `cd ./app` and use docker
